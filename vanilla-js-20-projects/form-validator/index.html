@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <script src="main.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <form id="form" class="form">
+      <h3>Register With Us</h3>
+      <div id="username-form" class="form-input">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter username" id="username" onchange="checkUsername()">
+        <p id="username-check"></p>
+      </div>
+      <div class="form-input">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" id="email" onchange="checkEmail(value)">
+        <p id="email-check"></p>
+      </div>
+      <div class="form-input">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" id="password" onchange="checkPassword(value)">
+        <p id="password-check"></p>
+      </div>
+      <div class="form-input">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" placeholder="Enter password again" id="confirm-password" onchange="checkConfirmPassword(value)">
+        <p id="confirm-check"></p>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
