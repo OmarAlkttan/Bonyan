@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Booking</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="movies">
+        <label for="movie">Pick a movie: </label>
+        <select name="movie" id="movie">
+          <option value="joker">Joker ($12)</option>
+          <option value="avengers">Avengers: Endgame ($10)</option>
+          <option value="toy-story">Toy Story 4 ($9)</option>
+          <option value="lion-king">Lion King ($8)</option>
+        </select>
+      </div>
+      <div class="chairs-hint">
+        <div>
+          <span class="half-circle empty"></span>
+          <p>N/A</p>
+        </div>
+        <div>
+          <span class="half-circle selected"></span>
+          <p>Selected</p>
+        </div>
+        <div>
+          <span class="half-circle occupid"></span>
+          <p>Occupid</p>
+        </div>
+      </div>
+      <div class="screen">
+      </div>
+      <div class="chairs">
+        <div class="side-chairs">
+          <span id="chair-1" class="half-circle empty"></span>
+          <span id="chair-2" class="half-circle empty"></span>
+          <span id="chair-3" class="half-circle empty"></span>
+          <span id="chair-4" class="half-circle empty"></span>
+          <span id="chair-5" class="half-circle empty"></span>
+          <span id="chair-6" class="half-circle empty"></span>
+          <span id="chair-7" class="half-circle empty"></span>
+          <span id="chair-8" class="half-circle empty"></span>
+          <span id="chair-9" class="half-circle empty"></span>
+          <span id="chair-10" class="half-circle empty"></span>
+          <span id="chair-11" class="half-circle empty"></span>
+          <span id="chair-12" class="half-circle empty"></span>
+        </div>
+        <div class="middle-chairs">
+          <span id="chair-13" class="half-circle empty"></span>
+          <span id="chair-14" class="half-circle empty"></span>
+          <span id="chair-15" class="half-circle empty"></span>
+          <span id="chair-16" class="half-circle empty"></span>
+          <span id="chair-17" class="half-circle empty"></span>
+          <span id="chair-18" class="half-circle occupid"></span>
+          <span id="chair-19" class="half-circle occupid"></span>
+          <span id="chair-20" class="half-circle empty"></span>
+          <span id="chair-21" class="half-circle empty"></span>
+          <span id="chair-22" class="half-circle empty"></span>
+          <span id="chair-23" class="half-circle empty"></span>
+          <span id="chair-24" class="half-circle empty"></span>
+          <span id="chair-25" class="half-circle empty"></span>
+          <span id="chair-26" class="half-circle empty"></span>
+          <span id="chair-27" class="half-circle empty"></span>
+          <span id="chair-28" class="half-circle empty"></span>
+          <span id="chair-29" class="half-circle empty"></span>
+          <span id="chair-30" class="half-circle occupid"></span>
+          <span id="chair-31" class="half-circle occupid"></span>
+          <span id="chair-32" class="half-circle empty"></span>
+          <span id="chair-33" class="half-circle empty"></span>
+          <span id="chair-34" class="half-circle empty"></span>
+          <span id="chair-35" class="half-circle occupid"></span>
+          <span id="chair-36" class="half-circle occupid"></span>
+        </div>
+        <div class="side-chairs">
+          <span id="chair-37" class="half-circle empty"></span>
+          <span id="chair-38" class="half-circle empty"></span>
+          <span id="chair-39" class="half-circle empty"></span>
+          <span id="chair-40" class="half-circle empty"></span>
+          <span id="chair-41" class="half-circle occupid"></span>
+          <span id="chair-42" class="half-circle occupid"></span>
+          <span id="chair-43" class="half-circle empty"></span>
+          <span id="chair-44" class="half-circle empty"></span>
+          <span id="chair-45" class="half-circle empty"></span>
+          <span id="chair-46" class="half-circle empty"></span>
+          <span id="chair-47" class="half-circle occupid"></span>
+          <span id="chair-48" class="half-circle empty"></span>
+        </div>
+      </div>
+      <div class="booking-information">
+        You have selected <span class="highlight" id="selected-seats">0</span> seats for a price of $<span class="highlight" id="total-price">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
