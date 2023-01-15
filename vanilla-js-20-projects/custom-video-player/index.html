@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom video player</title>
+
+  <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+  <link rel="stylesheet" href="resources/css/brands.min.css">
+  <link rel="stylesheet" href="resources/css/solid.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Custome Video Player</h1>
+    <div class="video">
+      <video id="video" src="ra3d.mp4">
+        your browser don't support this video type please visit link here to watch video
+      </video>
+       <div class="controls">
+        <i id="play-pause" class="fa-solid fa-play"></i>
+        <i id="stop" class="fa-solid fa-stop"></i>
+        <div class="timer">
+            <div id="time-progress">
+              <div></div>
+              <progress id="time-bar" max="100" value="0">Progress</progress>
+              <span id="time-cursor"></span>
+            </div>
+          <span id="time-digit">00:00</span>
+        </div>
+       </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
