@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div class="container">
+    <div class="settings">
+      <span id="setting-icon"  class="material-symbols-outlined terquaz">
+        settings
+        </span>
+    </div>
+    <h1 class="terquaz">Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amount to get the exchange rate</p>
+    <div class="currency-from">
+      <select name="currency-from" id="currency-from">
+        <option value="usd">USD</option>
+      </select>
+      <input id="currency-from-amount" type="number" value="1">
+    </div>
+    <div class="swap">
+      <button id="swap-button">Swap</button>
+      <p class="terquaz"><span id="currency-from-amount-show"></span> <span id="currency-from-show"></span> = <span id="currency-to-amount-show"></span> <span id="currency-to-show"></span></p>
+    </div>
+    <div class="currency-to">
+      <select name="currency-to" id="currency-to">
+        <option value="usd">USD</option>
+      </select>
+      <input id="currency-to-amount" type="number" value="1">
+    </div>
+    <button id="fetch">Fetch request</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
