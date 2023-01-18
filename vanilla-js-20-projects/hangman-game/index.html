@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Hangman</h1>
+      <p>Find the hidden word - Enter a letter</p>
+    </div>
+    <div class="hangman">
+      <div class="hangman-svg">
+        <svg id="hangman-svg" width="200" height="250">
+          <line x1="0" y1="250" x2="70" y2="250" stroke="white"
+          stroke-width="2" />
+          <line x1="35" y1="250" x2="35" y2="0" stroke="white" stroke-width="2"/>
+          <line x1="35" y1="0" x2="105" y2="0" stroke="white" stroke-width="2" />
+          <line x1="105" y1="0" x2="105" y2="40" stroke="white" stroke-width="2"/>
+        </svg>
+      </div>
+      <div id="wrong-letters"></div>
+    </div>
+    <div id="hidden-word">
+  
+    </div>
+  </div>
+  
+  <div id="already-entered">
+    <p>You have already entered this letter</p>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p id="modal-msg">Congratulation. You won!</p>
+      <button id="try-again">Play Again ?</button>
+    </div>
+  
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
