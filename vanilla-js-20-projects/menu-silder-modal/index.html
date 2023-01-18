@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu-Slider & Modal</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div id="collapsed-menu" class="collapsed-menu">
+    <img src="profile.jpg" alt="profile">
+    <p>Home</p>
+    <p>Portfolio</p>
+    <p>Blog</p>
+    <p>Contact Me</p>
+  </div>
+  <div id="main" class="main">
+    <header>
+      <span id="menu" class="material-symbols-outlined">
+        menu
+        </span>
+      <div class="container">
+        <h1>My Landing Page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        <button id="sign-up-btn">Sign Up</button>
+      </div>
+    </header>
+    <section>
+      <h3>What is this landing page about?</h3>
+      <p>
+        Lorem ipsum dolor sit amet. At aliquid similique qui quae fugiat ut minima totam id autem quam. Ut maxime itaque rem pariatur iste et pariatur libero quo perspiciatis saepe est officiis incidunt ea minima omnis quo dolore dolor. A voluptas molestias sit provident nostrum sit enim voluptatem rem recusandae aliquam et accusantium perferendis.</p>
+      <p>
+        Lorem ipsum dolor sit amet. At aliquid similique qui quae fugiat ut minima totam id autem quam.</p>
+      <h3>Tell Me More</h3>
+      <p>
+        Lorem ipsum dolor sit amet. At aliquid similique qui quae fugiat ut minima totam id autem quam. Ut maxime itaque rem pariatur iste et pariatur libero quo perspiciatis saepe est officiis incidunt ea minima omnis quo dolore dolor. A voluptas molestias sit provident nostrum sit enim voluptatem rem recusandae aliquam et accusantium perferendis.
+      </p>
+      <h3>Benefits</h3>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet. At aliquid similique qui quae fugiat ut minima totam id autem quam. Ut maxime itaque rem pariatur iste et pariatur libero quo perspiciatis saepe est officiis incidunt ea minima omnis quo dolore dolor. A voluptas molestias sit provident nostrum sit enim voluptatem rem recusandae aliquam et accusantium perferendis.
+        Lorem ipsum dolor sit amet. At aliquid similique qui quae fugiat ut minima totam id autem quam. Ut maxime itaque rem pariatur iste et pariatur libero quo perspiciatis saepe est officiis incidunt ea minima omnis quo dolore dolor. A voluptas molestias sit provident nostrum sit enim voluptatem rem recusandae aliquam et accusantium perferendis.
+      </p>
+    </section>
+  </div>
+  <div id="sign-up-modal" class="sign-up-modal">
+    <div class="sign-up-header">Sign Up <span id ="sign-up-close" class="material-symbols-outlined sign-up-close">
+      close
+      </span></div>
+      <div class="sign-up-body">
+        <h4>Register with us to get offers, support and more</h4>
+        <div class="input-control">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter Name">
+        </div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter Email">
+        </div>
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter Password">
+        </div>
+        <div class="input-control">
+          <label for="confirm-password">Confirm Password</label>
+          <input id="confirm-password" type="password"
+          placeholder="Confirm Password">
+        </div>
+        <button>Submit</button>
+      </div>
+  </div>
+  <script src="main.js"></script>
+</body> 
+</html>

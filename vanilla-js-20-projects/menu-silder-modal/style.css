@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+header{
+  text-align: center;
+  background-color: #182472;
+  color: white;
+  position: relative;
+}
+
+.collapsed-menu{
+  display: flex;
+  flex-direction: column;
+  background-color: #182472;
+  border-right: 1px solid lavender;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: -200%;
+  z-index: 1;
+  transition: left 0.5s linear;
+  flex-basis: 15rem;
+  height: 100%;
+}
+
+.collapsed-menu img{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 3rem 3rem;
+}
+
+.collapsed-menu p{
+  padding: 1rem;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main{
+  flex-basis: 100%;
+  width: 100%;
+}
+
+header span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+  padding: 0.3rem;
+  background-color: #121754;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: left 0.5s linear;
+}
+
+.container{
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header p{
+  font-size: 1.8rem;
+}
+
+.main button{
+  font-size: 1.6rem;
+  color: white;
+  background-color: #A833b0;
+  padding: 0.4rem 1rem;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+section{
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+
+h3{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.sign-up-modal{
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  position: absolute;
+  top: 35%;
+  left: -200%;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 100;
+  border: 1px solid black;
+}
+
+.sign-up-header{
+  background-color: #182472;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.2rem 0.5rem;
+  align-items: center;
+}
+
+.sign-up-close{
+  cursor: pointer;
+}
+
+.sign-up-body{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.input-control{
+  padding: 0.2rem 0.5rem;
+}
+
+.input-control input{
+  margin-top: 0.3rem;
+  display: block;
+  width: 100%;
+}
+
+.sign-up-modal button{
+  font-size: smaller;
+  width: 30%;
+  background-color: #A833b0;
+  color: white;
+  border-style: none;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}
