@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #Faf9f6;
+}
+
+.container{
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+
+.balance p:first-child{
+  margin-bottom: 0 ;
+}
+
+#balance{
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.income-expense{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  text-align: center;
+  background-color: white;
+}
+
+.income-expense div{
+  padding: 1rem 2rem;
+}
+
+.income-expense hr{
+  height: 3rem;
+  align-self: center;
+}
+
+.income-expense div p:first-child{
+  margin-bottom: 0;
+}
+
+#income{
+  margin-top: 0;
+  color: lightgreen;
+  font-size: 1.4rem;
+}
+
+#expense{
+  margin-top: 0;
+  color: lightcoral;
+  font-size: 1.4rem;
+}
+
+h3{
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+#history{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.history-item{
+  background-color: white;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid lightgray;
+  position: relative;
+}
+
+.history-item.red{
+  border-right: 6px solid red;
+}
+
+.history-item.green{
+  border-right: 6px solid green;
+}
+
+.history-item .amount{
+  float: right;
+}
+
+.history-item .delete{
+  position: absolute;
+  left: -6%;
+  top: 12%;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.input{
+  margin: 0.5rem 0;
+}
+
+.input label{
+  display: block;
+  font-weight: 600;
+}
+
+.input p{
+  margin: 0;
+}
+
+.input input{
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+button{
+  width: 100%;
+  color: white;
+  background-color: blueviolet;
+  border-style: none;
+  height: 2.5rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
