@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #134b5f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  width: 45rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#filter-post{
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+#posts{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  text-align: start;
+}
+
+.post{
+  position: relative;
+  background-color: #2596be;
+  padding: 0 2rem;
+}
+
+.post-id{
+  position: absolute;
+  left: -1.7%;
+  background-color: white;
+  color: #2596be;
+  padding: 0.5rem;
+  border-radius: 50%;
+  top: -12%;
+}
+
+#loader{
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 3rem;
+  height: 2rem;
+  display: none;
+}
+
+#circle-1{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: load 0.5s infinite;
+}
+
+#circle-2{
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  animation: load 0.5s infinite 0.125s;
+}
+
+#circle-3{
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+  animation: load 0.5s infinite 0.25s;
+}
+
+.circle{
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 1px;
+}
+
+@keyframes load {
+  0% { bottom: 0;}
+  50% { bottom: 30%;}
+  100% { bottom: 0;}
+}

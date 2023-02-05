@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Scroll Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Blog</h1>
+    <input id="filter-post" type="text" placeholder="Filter posts..." onkeyup="filterPosts(this.value)">
+    <div id="posts">
+      <div class="post">
+        <span class="post-id">1</span>
+        <h2 class="post-title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h2>
+        <p class="post-body">
+          quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="loader">
+    <span id="circle-1" class="circle"></span>
+    <span id="circle-2" class="circle"></span>
+    <span id="circle-3" class="circle"></span>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

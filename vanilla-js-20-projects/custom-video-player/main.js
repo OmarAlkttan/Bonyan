@@ -46,7 +46,11 @@ media.addEventListener('timeupdate', setTime);
 
 // change time of the video by clicking on progress bar
 function changeTimeBarValue(event){
+  console.log("event.pageX -> ", event.pageX);
+  console.log("this -> ", this)
+  console.log("offset -> ", this.offsetLeft)
   let x = event.pageX - this.offsetLeft;
+  console.log("x-> ", x);
   media.currentTime = Math.floor((x / this.offsetWidth) * media.duration);
   setCursor();
 }
