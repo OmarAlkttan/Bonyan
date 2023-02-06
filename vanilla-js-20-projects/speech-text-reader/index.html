@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Text Reader</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div id="modal" class="hide">
+    <span id="close" class="material-symbols-outlined">
+      close
+      </span>
+    <p>Choose Voice</p>
+    <select name="voice" id="voice">
+
+    </select>
+    <textarea name="custom-text" id="custom-text" cols="30" rows="7" placeholder="Enter text to read..."></textarea>
+    <button id="read-custom-text">Read Text</button>
+  </div>
+  <h1>Speech Text Reader</h1>
+  <button id="toggle-box">Toggle Text Box</button>
+  <div id="cards">
+    <div class="card">
+      <img class="card-img" src="/img/drink.jpg" alt="drink">
+      <p class="card-title">I'M THIRSTY</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
