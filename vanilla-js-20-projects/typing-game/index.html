@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+  <div id="difficulty">
+    <label for="level">Difficulty</label>
+    <select name="level" id="level">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+  <div class="container">
+    <div id="game">
+      <h1>Speed Typer</h1>
+      <p><span id="time">Time left: 10s</span> <span id="score">Score: 0</span></p>
+      <p id="type">Type the following:</p>
+      <p id="word">omar</p>
+      <div id="input-container">
+        <input id="input" type="text" placeholder="Type the word here..." autofocus>
+      </div>
+    </div>
+    <div id="again">
+      <h2>Time ran out</h2>
+      <p id="final-score">Your final score is 0</p>
+      <button id="reload">Reload</button>
+    </div>
+  </div>
+  <span id="settings" class="material-symbols-outlined">settings</span>
+  <script src="script.js"></script>
+</body>
+</html>
